@@ -14,7 +14,7 @@ class myapp(MDApp):
     def build(self):
         self.theme_cls.theme_style = "Light"
         self.theme_cls.primary_palette = "BlueGray"
-        return Builder.load_file("View/MainScreen/Screen.kv")
+        return Builder.load_file("Screen.kv")
 
     def logger(self):
         if self.root.ids.user.text == 'admin' and self.root.ids.password.text=='admin':
